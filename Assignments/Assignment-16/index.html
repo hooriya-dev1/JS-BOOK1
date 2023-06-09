@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    Assignment -16
+    <br>
+
+    <!-- 1. Show an alert box on click on a link. -->
+
+    <a href="#" id="myLink" onclick=" alert('Hello , Everyone')">Click Me</a>
+    <br>
+    <br>
+    <br>
+
+    <!-- 2. Display some Mobile images in browser. On click on an
+image Show the message in alert to user. -->
+
+    <h1 id="phone" style="text-align: center;">Mobile Phone Lookup</h1>
+
+
+    <div>
+        <img class="mobile1" onclick=" alert('Thanks for purchasing a phone from us')"
+            src="images/png-1.png"
+            alt= "Mobile 1">
+        <img class="mobile2" onclick=" alert('Thanks for purchasing a phone from us')"
+            src="images/png-2.png"
+            alt="Mobile 2">
+        <img class="mobile3" onclick=" alert('Thanks for purchasing a phone from us')"
+            src="images/png-3.png"
+            alt="Mobile 3">
+
+        <img class="mobile4" onclick=" alert('Thanks for purchasing a phone from us')"
+            src="images/png-4.png"
+            alt="Mobile 4">
+    </div>
+
+
+    <!-- 3. Display 10 student records in table and each row should contain a delete
+button. If you click on a button to delete a record, entire row should be
+deleted.  -->
+
+
+<div>
+    <table class="table table-striped-columns">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">S.no</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Age</th>
+                <th scope="col"></th>
+
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Fahad</td>
+                <td>Khan</td>
+                <td>34</td>
+                <td><button onclick="deleteButton(this)">Delete</button></td>
+
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Muzammil</td>
+                <td>Khan</td>
+                <td>11</td>
+                <td><button onclick="deleteButton(this)">Delete</button></td>
+
+              </tr> 
+              <tr>
+                <th scope="row">3</th>
+                <td>Moiz</td>
+                <td>Ali</td>
+                <td>3</td>
+                <td><button onclick="deleteButton(this)">Delete</button></td>
+
+              </tr> 
+              <tr>
+                <th scope="row">4</th>
+                <td>Ahmed</td>
+                <td>Khan</td>
+                <td>25</td>
+                <td><button onclick="deleteButton(this)" >Delete</button></td>
+
+              </tr> 
+              <tr>
+                <th scope="row">5</th>
+                <td>Hassan</td>
+                <td>Ali</td>
+                <td>22</td>
+                <td><button onclick="deleteButton(this)">Delete</button></td>
+
+              </tr>
+              <tr>
+                <th scope="row">6</th>
+                <td>Roha</td>
+                <td>Faiz</td>
+                <td>28</td>
+                <td><button onclick="deleteButton(this)">Delete</button></td>
+
+              </tr>
+              <tr>
+                <th scope="row">7</th>
+                <td>Hooriya</td>
+                <td>Hanif</td>
+                <td>40</td>
+                <td><button onclick="deleteButton(this)">Delete</button></td>
+
+              </tr>
+              <tr>
+                <th scope="row">8</th>
+                <td>Maira</td>
+                <td>Kanwal</td>
+                <td>60</td>
+                <td><button onclick="deleteButton(this)">Delete</button></td>
+
+              </tr>
+              <tr>
+                <th scope="row">9</th>
+                <td>Saiqa</td>
+                <td>Arshad</td>
+                <td>25</td>
+                <td><button onclick="deleteButton(this)">Delete</button></td>
+
+              </tr>
+              <tr>
+                <th scope="row">10</th>
+                <td>Hanif</td>
+                <td>khan</td>
+                <td>2</td>
+                <td><button onclick="deleteButton(this)">Delete</button></td>
+
+              </tr>
+              <tr>
+                <th scope="row">11</th>
+                <td>Fatima</td>
+                <td>Raees</td>
+                <td>23</td>
+                <td><button onclick="deleteButton(this)">Delete</button></td>
+
+              </tr>
+              <tr>
+                <th scope="row">11</th>
+                <td>aniya</td>
+                <td>Ali</td>
+                <td>56</td>
+                <td><button onclick="deleteButton(this)">Delete</button></td>
+
+              </tr>
+              <tr>
+                <th scope="row">11</th>
+                <td>Faiza</td>
+                <td>Ajaz</td>
+                <td>29</td>
+                <td><button onclick="deleteButton(this)">Delete</button></td>
+
+              </tr>
+              <tr>
+                <th scope="row">11</th>
+                <td>Faiqa</td>
+                <td>Kashan</td>
+                <td>19</td>
+                <td><button onclick="deleteButton(this)">Delete</button></td>
+
+              </tr>
+              <tr>
+                <th scope="row">11</th>
+                <td>Aliya</td>
+                <td>Arif</td>
+                <td>44</td>
+                <td><button onclick="deleteButton(this)">Delete</button></td>
+
+              </tr>
+              <tr>
+                <th scope="row">11</th>
+                <td>Anzish</td>
+                <td>Rehan</td>
+                <td>40</td>
+                <td><button onclick="deleteButton(this)">Delete</button></td>
+
+              </tr>
+              
+            </tbody>
+          </table>
+      </table>
+</div>
+
+<br>
+
+<!-- Display an image in browser. Change the picture on mouseover and set the
+first picture on mouseout. -->
+
+<img id="img1" onmouseover="setNewImage()"   onmouseout="setOldImage()" width="500px" src="">
+
+<!-- Show a counter in browser. Counter should increase on click on increase
+button and decrease on click on decrease button. And show updated counter
+value in browser. -->
+
+<h1 >Counter:<span id="counter">0</span> </h1>
+<button id="increment-count">Increase</button>
+<button id="decrement-count">Decrease</button> 
+  
+
+    <script src="./app.js">
+    </script>
+</body>
+</html>
